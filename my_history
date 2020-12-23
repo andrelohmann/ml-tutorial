@@ -1,0 +1,144 @@
+python3 -m venv venv
+source venv/bin/activate
+sudo apt install python3-dev python3-pip
+deactivate
+source venv/bin/activate
+pip install --upgrade pip
+pip install --upgrade tensorflow
+pip install numpy
+python3 chapter_2.py
+apt search cuda
+sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
+sudo add-apt-repository "deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
+sudo apt install cuda
+deactivate
+exit
+cd Workspace/TEST
+charm
+charm .
+ls
+cat main.py
+python main.py
+python main.py andre
+echo '# CUDA' >> ~/.zshrc\necho 'export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}' >> ~/.zshrc
+nano ~/.zshrc
+cd Workspace/ML/ml-tutorial
+source venv/bin/activate
+nvcc --version
+nvcc -o hello hello.cu
+./hello
+python3 chapter_2.py
+apt search libcudart
+apt install libcudart10.1
+sudo apt install libcudart10.1
+nvidia-smi
+whereis nvidia
+prime-select query
+prime-select nvidia
+sudo prime-select nvidia
+sudo prime-select intel
+sudo prime-select nvidia
+nvidia-smi
+sudo apt-get install cuda-drivers
+sudo apt autoremove
+lspci | grep -i nvidia
+nvidia-smi
+reboot
+sudo nvidia-smi
+nvidia-settings
+sudo nvidia-settings
+lspci -v | grep 3D
+dkms status
+sudo lshw -C display
+ubuntu-drivers devices
+sudo lshw -C display
+sudo nvidia-smi
+ubuntu-drivers devices
+sudo ubuntu-drivers autoinstall
+sudo prime-select nvidia
+ls /lib/modprobe.d/blacklist-nvidia.conf
+sudo ls /lib/modprobe.d/blacklist-nvidia.conf
+sudo efibootmgr
+grep "X Driver" /var/log/Xorg.0.log
+find /usr/lib/modules -name nvidia.ko -exec modinfo {} \;
+sudo find /usr/lib/modules -name nvidia.ko -exec modinfo {} \;
+ubuntu-drivers devices
+sudo ubuntu-drivers autoinstall
+apt remove --pure nvidia-*
+sudo apt remove --pure nvidia-*
+sudo apt remove --purge nvidia-*
+sudo apt remove nvidia-*
+sudo apt remove nvidia-driver*
+sudo apt remove nvidia-driver-*
+sudo apt remove nvidia*
+sudo apt remove nvidia* sudo add-apt-repository ppa:graphics-drivers/ppa
+ubuntu-drivers devices
+sudo ubuntu-drivers autoinstall
+sudo apt install nvidia-driver-390
+sudo ubuntu-drivers autoinstall
+sudo apt install linux-modules-nvidia-390-generic-hwe-20.04
+apt full-upgrade
+sudo apt full-upgrade
+dpkg l | grep -i nvidia
+sudo -i
+ubuntu-drivers devices
+nvidia-smi
+exit
+nvidia-smi
+ubuntu-drivers devices
+sudo ubuntu-drivers autoinstall
+cd Workspace/ML/ml-tutorial
+source venv/bin/activate
+python3 chapter_2.py
+sudo apt-get install libcudart
+sudo apt-get install libcudart10.1
+python3 chapter_2.py
+./hello
+nvidia-smi
+exit
+nvcc -o hello hello.cu
+nvidia-smi
+ubuntu-drivers devices
+apt seaqrch libcublas
+apt search libcublas
+sudo apt install libcublas10
+apt search libcufft
+sudo apt install libcufft10
+sudo apt install libcurand10
+sudo apt install libcusolver10
+sudo apt install libcusparse10
+apt search libcudnn
+sudo apt install nvidia-cuda-toolkit
+sudo -i
+exit
+sudo -i
+cd Workspace/ML/ml-tutorial
+source venv/bin/activate
+python3 chapter_2.py
+source venv/bin/activate
+pip install tensorflow
+pip install tensorflow --upgrade
+df -h
+exit
+apt search liibcud
+apt search libcud
+
+dpkg l | grep -i nvidia
+dpkg -l | grep -i nvidia
+apt purge $(dpkg -l | awk '/nvidia/{ print $2 }')
+dpkg -l | grep -i nvidia
+apt purge cuda-*
+apt purge cuda-nsight-compute-11-1
+apt purge libcudart10.1
+nano /etc/apt/sources.list.d/graphics-drivers-ubuntu-ppa-focal.list
+apt purge libcublas10 libcublaslt10 libcudart10.1 libcufft10 libcurand10 libcusolver10 libcusparse10 libnvidia-cfg1-390 libnvidia-common-390 libnvidia-compute-390 libnvidia-compute-390 libnvidia-decode-390 libnvidia-decode-390 libnvidia-encode-390 libnvidia-encode-390 libnvidia-fbc1-390 libnvidia-gl-390 libnvidia-ifr1-390 linux-modules-nvidia-390-5.4.0-52-generic linux-modules-nvidia-390-generic-hwe-20.04 nvidia-compute-utils-390 nvidia-driver-390 nvidia-kernel-common-390 nvidia-kernel-source-390 nvidia-prime nvidia-settings nvidia-utils-390 screen-resolution-extra xserver-xorg-video-nvidia-390
+apt purge libnvidia-compute-390
+apt purge libnvidia-compute-390:i386
+dpkg -l | grep -i nvidia
+dpkg -l | grep -i cud
+apt purge cuda-cudart-11-1
+sudo apt install nvidia-cuda-toolkit
+nvcc --version
+ubuntu-drivers devices
+ubuntu-drivers autoinstall
+nvidia-smi
